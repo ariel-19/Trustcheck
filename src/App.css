@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-bar {
+  background-color: rgb(0, 110, 255);
+  width: 100%;
+  height: 3cm;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white; /* Changement de la couleur du texte */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f0c040; /* Changement de couleur au survol */
+}
+
+/* Styles pour la partie centrale */
+.middle-section {
+  background-color: #f0f0f0;
+  background-size: cover;
+  height: 18cm;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 3cm; /* Compense la barre de menu fixe */
+  position: relative; /* Nécessaire pour la superposition du logo */
+}
+
+/* Conteneur pour le logo de la page d'accueil */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement le logo */
+  align-items: center; /* Centre verticalement le logo */
+  position: absolute; /* Superpose le logo sur l'image de fond */
+  top: 50px; /* Ajuste la distance par rapport au haut de la page */
+  width: 100%;
+  z-index: 1; /* Assure que le logo reste au-dessus de l'image de fond */
+}
+
+/* Style pour l'image du logo */
+.logo {
+  max-width: 150px; /* Ajuste la taille maximale du logo */
+  max-height: 150px;
+  object-fit: contain; /* Garde les proportions du logo */
+  transition: transform 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Styles pour l'image de fond */
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0; /* L'image de fond reste derrière le logo */
+}
+
+/* Amélioration des boutons d'inscription */
+.signup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color: #1e90ff; /* Couleur bleu vif */
   color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.signup-button:hover {
+  background-color: #4682b4; /* Changement de couleur au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Amélioration du pied de page */
+.footer {
+  background-color: #1e90ff; /* Même bleu que le reste de l'interface */
+  padding: 20px;
+  text-align: center; /* Centrer le texte */
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Ombre en haut du pied de page */
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between; /* Espace entre les éléments du footer */
+  padding: 0 20px;
+}
+
+.footer-info span {
+  margin: 0 20px;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+/* Bouton de retour à l'accueil */
+.return-home .btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transition fluide pour l'effet de survol */
+}
+
+.return-home .btn:hover {
+  background-color: #4682b4; /* Couleur changeante au survol */
 }

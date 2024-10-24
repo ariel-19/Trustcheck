@@ -1,0 +1,41 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+label{
+    color:black;
+}
+.form{
+    margin:0 auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+    width: 600px;
+    
+}
+.all-form{
+    margin-top: 20px;
+}
+input{
+    display: block;
+}  
+button{
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+form{
+    width: 500px;
+}
+.fondCo{
+    background-image: url('./imgConnexion.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+
+
+}

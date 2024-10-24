@@ -1,0 +1,43 @@
+.fondCo {
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choix {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.texte {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.btn-success {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.text-light {
+    color: white !important;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}

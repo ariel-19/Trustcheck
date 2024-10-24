@@ -1,0 +1,11 @@
+.fondCli{
+    background-image: url('./imCli.jpg');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+
+}
